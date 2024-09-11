@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+ <link rel="stylesheet" href="./pstyle.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">StockGuru</h2>
+        <nav class="navigation">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">SERVICES</a>
+            <a href="#">CONTACT</a>
+            <button id="signupButton" class="btnlogin-popup">SIGN UP</button>
+            <button id="loginButton" class="btnlogin-popup">LOGIN</button>
+        </nav>
+    </header>
+
+    <div id="signupBox" class="box" style="display: none;">
+        <form id="signupForm">
+            <h2>SIGN UP</h2>
+            <div class="inputbox">
+                <input type="text" name="uName" required>
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="inputbox">
+                <input type="text" name="email" required>
+                <span>EmailId</span>
+                <i></i>
+            </div>
+            <div class="inputbox">
+                <input type="password" name="password" required>
+                <span>Password</span>
+                <i></i>
+            </div>
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+
+    <div id="loginBox" class="box" style="display: none;">
+        <form id="loginForm">
+            <h2>LOGIN</h2>
+            <div class="inputbox">
+                <input type="text" name="email" required>
+                <span>EmailId</span>
+                <i></i>
+            </div>
+            <div class="inputbox">
+                <input type="password" name="password" required>
+                <span>Password</span>
+                <i></i>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+<script src="./pscript.js"></script>
+   
+</body>
+</html>

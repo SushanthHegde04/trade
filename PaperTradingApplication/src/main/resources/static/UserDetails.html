@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+ <link rel="stylesheet" href="portfoliostyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!-- Display User Information -->
+            <div class="user">
+                <h2>STOCK_MASTER</h2>
+                <ul>
+                    <img src="user.jpg" alt="userimg">
+                    <li id="uid">User ID: </li>
+                    <li id="uname">Username: </li>
+                    <li id="uemail">Email: </li>
+                    <li><button class="delete-account-button">Change Password</button></li>
+                    <li><button class="delete-account-button" onclick="fun()">Delete Account</button></li>
+                </ul>
+            </div>
+       
+        <!-- Display Allocation Information -->
+         <div class="seccon">
+        <div class="Allocation">
+            <h3>Allocated Money</h3>
+            <p>Rs1000000</p>
+        </div>
+
+        <!-- Display Balance Information -->
+        <div class="balance">
+            <h3 >BALANCE:</h3>
+            <p id="ubalance">Rs500000</p>
+
+            <h3>Invested:</h3>
+            <p id="uinvested">Rs300000</p>
+        </div>
+
+        <!-- Display Invested Stocks -->
+        <div class="INVESTED">
+            <h3>Invested Stocks:</h3>
+            <table>
+<!--                <tr>
+                    <th>Stock ID</th>
+                    <th>Stock Symbol</th>
+                    <th>Current Price</th>
+                    <th>Quantity</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>AAPL</td>
+                    <td>1500</td>
+                    <td>10</td>
+                    <td><button class='sell-button' onclick='openNewPage(this)' data-stock-id='001' data-user-id='12345' data-type='sell'>Sell</button></td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>TSLA</td>
+                    <td>2500</td>
+                    <td>5</td>
+                    <td><button class='sell-button' onclick='openNewPage(this)' data-stock-id='002' data-user-id='12345' data-type='sell'>Sell</button></td>
+                </tr> -->
+            </table>
+        </div>
+    </div>
+    </div>
+
+        <!-- Display All Available Stocks -->
+       <div class="stocks">
+        <h3>Available Stocks:</h3>
+        <table>
+            <!-- Table rows will be generated dynamically here -->
+        </table>
+        
+        <div id="quantityModal" style="display:none;">
+    <label for="quantityInput">Enter Quantity:</label>
+    <input type="number" id="quantityInput" min="1">
+    <button onclick="sellStock()">Sell</button>
+    <button onclick="closeModal()">Cancel</button>
+</div>
+        
+        
+    </div>
+    </header>
+
+    <!-- Placeholder script for button actions -->
+    <script>
+        
+
+        function delccount(userId) {
+            alert('Account deletion for user ID: ' + userId);
+        }
+    </script>
+    <script src="userdata.js"></script>
+    <script src="stock.js"></script>
+   <script src="transaction.js"></script>
+   <script src="buysell.js"></script>
+</body>
+
+</html>
